@@ -1,0 +1,16 @@
+
+RewriteEngine on
+
+RewriteRule ^accueil$ index1.php
+RewriteRule ^accueilPageAdmin$ index3.html
+RewriteRule ^.{0}$ index.php
+RewriteRule ^ChoixOfficeOrGraphique$ page.php
+RewriteRule ^ajouterUneMarque$ ajouterMarque.php
+RewriteRule ^ajouterUneMachine$ ajouterMachine.php
+
+RewriteRule ^ListeT@Machines$ AffMachine.php
+RewriteRule ^ListeT@Workers$ AffEmp.php
+RewriteRule ^ListeT@Brands$ AffMarque.php
+RewriteRule ^ControleOfDELET$ supprimer.php
+RewriteRule ^modifierLaMarque$ modifierMarque.php
+RewriteRule ^modifierLaMachine$ modifierMachine.php

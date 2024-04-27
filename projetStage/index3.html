@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+          <link rel="stylesheet" href="assets/css/style.scss">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        
+        <title>Groupe Arkeos Local web site</title>
+		<link rel="icon" type="image/png" href="images/logoHeader.png">
+       
+       <style>
+           .home__img img{
+             border-radius: .3rem;
+             box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+             transition: 1s;
+           }
+           .home__img{
+             width:600px;
+             position: absolute;
+             top: 190px;
+           }
+           .home__img img:hover{
+              transform: scale(1.1);
+           }
+
+ .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.box-container .box{
+    flex:1 1 30rem;
+    text-align: center;
+    background:#fff;
+    border-radius: 1rem;
+    width: 400px;
+    height: 160px;
+    box-shadow:0 .4rem 1rem rgba(0,0,0,.1);
+}
+
+.box-container .box h3{
+    color:#444;
+    font-size: 20px;
+    padding-top: 1rem;
+}
+ .box-container .box a{
+   color: var(--first-color);
+    font-size: 1.4rem;
+    padding-top: .5rem;
+}
+       </style> 
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index3.html"  ><img src="images/logoA.png" width="130px"></a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index3.html#home" class="nav__link active">Acceille</a></li>
+                        <li class="nav__item"><a href="index3.html#work333" class="nav__link"></b>+</b>Ajouter</a></li>
+                        <li class="nav__item"><a href="index3.html#work333" class="nav__link">✓ Afficher</a></li>
+                        <li class="nav__item"><a href="log/" class="nav__link">Gestion emploiyées</a></li>
+                        <li class="nav__item"><a href="index.php">Deconnexion</a></li>
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Welcome,<br>to <span class="home__title-color">Groupe</span><br> ARKEOS</h1>
+                    <a href="#contact" class="button">Contact Us</a>
+                </div>
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <!-- <img src="images/ESET555.jpg" alt="" width="1300px"> -->
+											<h3>So what's this all about?</h3>
+											<p>Depuis 1950,<strong>le Groupe ARKEOS</strong> propose des offres exhaustives de systèmes d'impression petits et grands formats, intégrant les dernières technologies (Laser, Jet d’encre, Eco-solvant, UV et Sublimation) et les solutions associées, de capture, de numérisation, de gestion de workflow et de la gestion électronique de documents, ainsi que des services de conseil et des services gérés.
+											<p> Notre objectif est de simplifier, sécuriser et améliorer ce que la technologie d’impression peut apporter à votre activité.</p>
+                                            <a href="#" class="button " style="margin-top:20px">Continue Reading</a>
+										
+                
+                </div>
+            </section>
+            <!-- id="work333" -->
+            <div id="work333">
+
+              
+               
+                    <h3></h3><br>
+                    <h3></h3><br>
+                 
+                </div> 
+            <!--===== Services =====-->
+            <section class="work_section" id="work">
+                <h2 class="section-title" >Category</h2>
+    <div class="box-container">
+
+        <div class="box">
+       <!--      <i class="fas fa-code"></i> -->
+            <h3>Ajouter Marque</h3>
+           <a href="ajouterUneMarque">click ici</a>
+        </div>
+
+        <div class="box">
+            <!-- <i class="fas fa-paint-brush"></i> -->
+            <h3>Ajouter Machine</h3>
+            <a href="ajouterUneMachine">click ici</a>
+        </div>
+        <div class="box">
+            <!--      <i class="fas fa-code"></i> -->
+                 <h3>Afficher Marque</h3>
+                <a href="ListeT@Brands">click ici</a>
+             </div>
+     
+             <div class="box">
+                 <!-- <i class="fas fa-paint-brush"></i> -->
+                 <h3>Afficher Machine</h3>
+                 <a href="ListeT@Machines">click ici</a>
+             </div>
+
+    </div>
+</section>
+<!-- service section ends -->
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Nom" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Envoyer" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Groupe ARKEOS</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">290 Bd Mohammed V Casablanca 20250 <br>
+                +212 522 444 270 <br>
+                +212 522 444 272</p>
+                <p>&#169; 2023 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+</html>
